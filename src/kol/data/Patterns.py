@@ -67,4 +67,13 @@ patterns = {
 	"chatWhoResponse" : r'<table><tr><td class=tiny><center><b>Players in this channel:',
 	"chatWhoPerson" : r'<a target="?mainpane"? href="showplayer\.php\?who=([0-9]+)"><font color="?#?\w+"?>([^<>]+)<\/font><\/a>',
 	"chatLinkedPlayer" : r"<a style='color: #?\w+' href='showplayer\.php\?who=([0-9]+)' target=mainpane>([^<]+)<\/a>",
+
+        # Adventure Patterns
+        "monsterName" : r"<span id='monname'>(.*)</span>",
+        "nonCombatName" : r"<center><b>(.?)</b>",
+        "choiceName" : r"<b>(.?)</b></td></tr>,
+        "choiceInfo" : r"<input type=hidden name=pwd value='([^']*)'><input type=hidden name=whichchoice value=([^>]*)>",
+        "fightWon" : r"You win the fight!",
+        "fightLost" : r"You lose. *?You slink away",
+        "badCombatRequest" : r"You twiddle your thumbs\.",
 }
